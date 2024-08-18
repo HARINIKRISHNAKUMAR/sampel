@@ -1,2 +1,54 @@
-this is test3.txt file
-hi this is test1
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    padding-top: 50px; /* To prevent content from hiding behind the fixed navbar */
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    z-index: 1000;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar ul li {
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    color: #ff5733; /* Change color on hover */
+}
+
+.scrolled {
+    background-color: #555; /* Background color change when scrolled */
+}
+
+section {
+    padding: 100px 20px;
+    height: 100vh;
+    text-align: center;
+}
+
+section:nth-child(even) {
+    background-color: #f4f4f4;
+}
